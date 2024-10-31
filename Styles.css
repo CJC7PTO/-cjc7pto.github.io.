@@ -1,0 +1,221 @@
+/* styles.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #f8c8e6; /* Rosa claro */
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #4A4A4A;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #4A4A4A;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d81b60; /* Rosa mais escuro */
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #4A4A4A;
+    font-weight: bold;
+}
+
+/* Seções */
+section {
+    padding: 50px 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Seção Sobre - Estilizando a imagem */
+.about-image img {
+    max-width: 400px; /* Define uma largura máxima para a imagem */
+    width: 100%; /* Garante que a imagem seja responsiva */
+    height: auto; /* Mantém a proporção correta */
+    border-radius: 8px; /* Bordas arredondadas para um design mais suave */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor da imagem */
+    margin-bottom: 20px;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .about-image img {
+        max-width: 300px; /* Diminui um pouco mais a largura em telas menores */
+    }
+}
+
+/* Seção Serviços */
+.service {
+    margin-bottom: 30px;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #4A4A4A;
+}
+
+.service ul {
+    list-style: none;
+}
+
+.service ul li {
+    margin: 5px 0;
+}
+
+/* Seção Galeria */
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px; /* Espaço entre os itens */
+}
+
+.gallery-item {
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-item p {
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Seção Depoimentos */
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.testimonial-image {
+    margin-bottom: 20px;
+}
+
+.testimonial-image img {
+    max-width: 100%; /* Faz a imagem ocupar todo o espaço disponível no contêiner */
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Garante que a imagem se ajuste ao tamanho do site em telas pequenas */
+    object-fit: contain; /* Mantém a proporção da imagem */
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #FF69B4; /* Rosa forte */
+    font-family: 'Roboto', sans-serif; /* Mantendo a Roboto, que já está incluída */
+}
+
+/* Botões e Links */
+a {
+    color: #FF69B4; /* Links em rosa */
+}
+
+a:hover {
+    color: #FF1493; /* Rosa mais escuro ao passar o mouse */
+}
+
+/* Seção de Serviços */
+#services h2, #services h3 {
+    color: #FF69B4; /* Títulos dos serviços em rosa */
+}
+
+/* Botão de Contato no WhatsApp */
+.contact-btn {
+    background-color: #FF69B4; /* Cor de fundo rosa */
+    color: white; /* Texto em branco */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact-btn:hover {
+    background-color: #FF1493; /* Alterar para rosa mais escuro no hover */
+}
+
+/* Estilos para o Botão de Contato no WhatsApp */
+.contact-btn {
+    background-color: #25D366; /* Verde do WhatsApp */
+    color: white; /* Texto em branco */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-flex; /* Alinha o ícone e o texto */
+    align-items: center; /* Alinha verticalmente o conteúdo */
+}
+
+.contact-btn i {
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    font-size: 1.2rem; /* Tamanho do ícone */
+}
+
+.contact-btn:hover {
+    background-color: #128C7E; /* Verde mais escuro no hover */
+}
